@@ -1,7 +1,7 @@
 .container {
   border: solid green 2px;
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
 
   display: flex;
   flex-wrap: wrap;
@@ -9,6 +9,7 @@
 
 .box {
   border: solid rgb(7, 15, 7) 2px;
-  flex-basis: 25%;
+  height: 62.5px;
+  width: 62.5px;
   box-sizing: border-box;
 }
