@@ -1,0 +1,14 @@
+.container {
+  border: solid green 2px;
+  height: 400px;
+  width: 400px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  border: solid rgb(7, 15, 7) 2px;
+  flex-basis: 25%;
+  box-sizing: border-box;
+}
