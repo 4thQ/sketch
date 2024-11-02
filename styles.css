@@ -5,11 +5,12 @@
 
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .box {
   border: solid rgb(7, 15, 7) 2px;
-  height: 62.5px;
-  width: 62.5px;
+  height: 6.66666667%;
+  width: 6.66666667%;
   box-sizing: border-box;
 }
