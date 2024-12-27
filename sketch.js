@@ -1,10 +1,11 @@
 const container = document.querySelector(".container");
+const input = document.querySelector(".input");
+const btn = document.querySelector(".btn");
 let numOfDivs = 225;
 
 for (i = 1; i <= numOfDivs; i++) {
   const box = document.createElement("div");
   box.classList.add("box");
-  //   const boxContent = (box.textContent = `box${i}`);
   container.appendChild(box);
 
   const width = 100 / Math.sqrt(numOfDivs);
@@ -25,22 +26,17 @@ for (i = 1; i <= numOfDivs; i++) {
   });
 }
 
-const input = document.querySelector(".input");
-const btn = document.querySelector(".btn");
-
 btn.addEventListener("click", () => {
   const input1 = input.value;
+  numOfDivs = input1 * input1;
 
   while (container.hasChildNodes()) {
     container.removeChild(container.firstChild);
   }
 
-  numOfDivs = input1 * input1;
-
   for (i = 1; i <= numOfDivs; i++) {
     const box = document.createElement("div");
     box.classList.add("box");
-    //   const boxContent = (box.textContent = `box${i}`);
     container.appendChild(box);
 
     const width = 100 / Math.sqrt(numOfDivs);
